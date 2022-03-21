@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SwiggyUI</string>
+    <string name="swiggy">Swiggy</string>
+    <string name="food">Food</string>
+    <string name="instamart">Instamart</string>
+    <string name="search">Search</string>
+    <string name="account">Account</string>
+    <string name="get_unlimited_benefits_75_month_on_restaurant_instamart">Get unlimited benefits @ 75/month on Restaurant, Instamart</string>
+    <string name="offers">Offers</string>
+    <string name="temp_address">Shivraj nagar, Rahatni, Pimpri Chinchwad, Pune , 412303</string>
+    <string name="area">Arena 29</string>
+</resources>
