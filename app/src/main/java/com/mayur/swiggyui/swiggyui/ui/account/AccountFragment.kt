@@ -1,4 +1,4 @@
-package com.ajit.swiggyui.ui.food
+package com.mayur.swiggyui.swiggyui.ui.account
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,13 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
-import com.ajit.swiggyui.databinding.FragmentFoodBinding
-import com.ajit.swiggyui.ui.BaseFragment
+import com.mayur.swiggyui.swiggyui.databinding.FragmentAccountBinding
+import com.mayur.swiggyui.swiggyui.ui.BaseFragment
 
-class FoodFragment : BaseFragment() {
+class AccountFragment : BaseFragment() {
 
-    private lateinit var foodViewModel: FoodViewModel
-    private var _binding: FragmentFoodBinding? = null
+    private lateinit var accountViewModel: AccountViewModel
+    private var _binding: FragmentAccountBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -23,14 +23,14 @@ class FoodFragment : BaseFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        foodViewModel =
-            ViewModelProvider(this)[FoodViewModel::class.java]
+        accountViewModel =
+            ViewModelProvider(this)[AccountViewModel::class.java]
 
-        _binding = FragmentFoodBinding.inflate(inflater, container, false)
+        _binding = FragmentAccountBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textDashboard
-        foodViewModel.text.observe(viewLifecycleOwner, {
+        val textView: TextView = binding.textNotifications
+        accountViewModel.text.observe(viewLifecycleOwner, {
             textView.text = it
         })
         return root

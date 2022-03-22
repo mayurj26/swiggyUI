@@ -1,10 +1,10 @@
-package com.ajit.swiggyui.ui.home
+package com.mayur.swiggyui.swiggyui.ui.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.ajit.swiggyui.R
-import com.ajit.swiggyui.ui.home.adapter.ItemsViewModel
+import com.mayur.swiggyui.swiggyui.R
+import com.mayur.swiggyui.swiggyui.ui.home.adapter.ItemsViewModel
 import com.denzcoskun.imageslider.models.SlideModel
 
 class HomeViewModel : ViewModel() {

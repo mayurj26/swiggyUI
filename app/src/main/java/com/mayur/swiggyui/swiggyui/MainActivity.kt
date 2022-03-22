@@ -1,4 +1,4 @@
-package com.ajit.swiggyui
+package com.mayur.swiggyui.swiggyui
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
-import com.ajit.swiggyui.databinding.ActivityMainBinding
+import com.mayur.swiggyui.swiggyui.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

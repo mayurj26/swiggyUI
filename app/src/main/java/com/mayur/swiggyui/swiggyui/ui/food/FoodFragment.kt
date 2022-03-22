@@ -1,4 +1,4 @@
-package com.ajit.swiggyui.ui.instamart
+package com.mayur.swiggyui.swiggyui.ui.food
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,13 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
-import com.ajit.swiggyui.databinding.FragmentInstamartBinding
-import com.ajit.swiggyui.ui.BaseFragment
+import com.mayur.swiggyui.swiggyui.databinding.FragmentFoodBinding
+import com.mayur.swiggyui.swiggyui.ui.BaseFragment
 
-class InstamartFragment : BaseFragment() {
+class FoodFragment : BaseFragment() {
 
-    private lateinit var instamartViewModel: InstamartViewModel
-    private var _binding: FragmentInstamartBinding? = null
+    private lateinit var foodViewModel: FoodViewModel
+    private var _binding: FragmentFoodBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -23,14 +23,14 @@ class InstamartFragment : BaseFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        instamartViewModel =
-            ViewModelProvider(this)[InstamartViewModel::class.java]
+        foodViewModel =
+            ViewModelProvider(this)[FoodViewModel::class.java]
 
-        _binding = FragmentInstamartBinding.inflate(inflater, container, false)
+        _binding = FragmentFoodBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textDashboard
-        instamartViewModel.text.observe(viewLifecycleOwner, {
+        foodViewModel.text.observe(viewLifecycleOwner, {
             textView.text = it
         })
         return root

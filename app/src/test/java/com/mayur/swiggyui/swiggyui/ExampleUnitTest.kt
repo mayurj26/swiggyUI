@@ -1,4 +1,4 @@
-package com.ajit.swiggyui
+package com.mayur.swiggyui.swiggyui
 
 import org.junit.Test
 

@@ -1,13 +1,13 @@
-package com.ajit.swiggyui.ui.food
+package com.mayur.swiggyui.swiggyui.ui.account
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class FoodViewModel : ViewModel() {
+class AccountViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is food Fragment"
+        value = "This is Account Fragment"
     }
     val text: LiveData<String> = _text
 }

@@ -1,4 +1,4 @@
-package com.ajit.swiggyui.ui.home
+package com.mayur.swiggyui.swiggyui.ui.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,9 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.ajit.swiggyui.databinding.FragmentHomeBinding
-import com.ajit.swiggyui.ui.BaseFragment
-import com.ajit.swiggyui.ui.home.adapter.CustomAdapter
+import com.mayur.swiggyui.swiggyui.databinding.FragmentHomeBinding
+import com.mayur.swiggyui.swiggyui.ui.BaseFragment
+import com.mayur.swiggyui.swiggyui.ui.home.adapter.CustomAdapter
 
 import com.denzcoskun.imageslider.constants.ActionTypes
 import com.denzcoskun.imageslider.interfaces.ItemChangeListener

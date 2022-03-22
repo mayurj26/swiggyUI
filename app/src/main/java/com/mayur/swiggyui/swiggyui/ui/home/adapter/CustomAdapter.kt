@@ -1,4 +1,4 @@
-package com.ajit.swiggyui.ui.home.adapter
+package com.mayur.swiggyui.swiggyui.ui.home.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.ajit.swiggyui.R
+import com.mayur.swiggyui.swiggyui.R
 
 class CustomAdapter(private val mList: List<ItemsViewModel>) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 

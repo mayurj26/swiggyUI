@@ -1,4 +1,4 @@
-package com.ajit.swiggyui.ui.search
+package com.mayur.swiggyui.swiggyui.ui.instamart
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,13 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
-import com.ajit.swiggyui.databinding.FragmentSearchBinding
-import com.ajit.swiggyui.ui.BaseFragment
+import com.mayur.swiggyui.swiggyui.databinding.FragmentInstamartBinding
+import com.mayur.swiggyui.swiggyui.ui.BaseFragment
 
-class SearchFragment : BaseFragment() {
+class InstamartFragment : BaseFragment() {
 
-    private lateinit var searchViewModel: SearchViewModel
-    private var _binding: FragmentSearchBinding? = null
+    private lateinit var instamartViewModel: InstamartViewModel
+    private var _binding: FragmentInstamartBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -23,14 +23,14 @@ class SearchFragment : BaseFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        searchViewModel =
-            ViewModelProvider(this)[SearchViewModel::class.java]
+        instamartViewModel =
+            ViewModelProvider(this)[InstamartViewModel::class.java]
 
-        _binding = FragmentSearchBinding.inflate(inflater, container, false)
+        _binding = FragmentInstamartBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textDashboard
-        searchViewModel.text.observe(viewLifecycleOwner, {
+        instamartViewModel.text.observe(viewLifecycleOwner, {
             textView.text = it
         })
         return root

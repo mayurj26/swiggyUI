@@ -7,7 +7,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.ajit.swiggyui"
+        applicationId "com.mayur.swiggyui.swiggyui"
         minSdk 21
         targetSdk 32
         versionCode 1

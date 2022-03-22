@@ -1,4 +1,4 @@
-package com.ajit.swiggyui.ui.account
+package com.mayur.swiggyui.swiggyui.ui.search
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,13 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
-import com.ajit.swiggyui.databinding.FragmentAccountBinding
-import com.ajit.swiggyui.ui.BaseFragment
+import com.mayur.swiggyui.swiggyui.databinding.FragmentSearchBinding
+import com.mayur.swiggyui.swiggyui.ui.BaseFragment
 
-class AccountFragment : BaseFragment() {
+class SearchFragment : BaseFragment() {
 
-    private lateinit var accountViewModel: AccountViewModel
-    private var _binding: FragmentAccountBinding? = null
+    private lateinit var searchViewModel: SearchViewModel
+    private var _binding: FragmentSearchBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -23,14 +23,14 @@ class AccountFragment : BaseFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        accountViewModel =
-            ViewModelProvider(this)[AccountViewModel::class.java]
+        searchViewModel =
+            ViewModelProvider(this)[SearchViewModel::class.java]
 
-        _binding = FragmentAccountBinding.inflate(inflater, container, false)
+        _binding = FragmentSearchBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textNotifications
-        accountViewModel.text.observe(viewLifecycleOwner, {
+        val textView: TextView = binding.textDashboard
+        searchViewModel.text.observe(viewLifecycleOwner, {
             textView.text = it
         })
         return root

@@ -1,13 +1,13 @@
-package com.ajit.swiggyui.ui.instamart
+package com.mayur.swiggyui.swiggyui.ui.food
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class InstamartViewModel : ViewModel() {
+class FoodViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is instamart Fragment"
+        value = "This is food Fragment"
     }
     val text: LiveData<String> = _text
 }

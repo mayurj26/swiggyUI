@@ -1,13 +1,13 @@
-package com.ajit.swiggyui.ui.account
+package com.mayur.swiggyui.swiggyui.ui.search
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class AccountViewModel : ViewModel() {
+class SearchViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is Account Fragment"
+        value = "This is search Fragment"
     }
     val text: LiveData<String> = _text
 }

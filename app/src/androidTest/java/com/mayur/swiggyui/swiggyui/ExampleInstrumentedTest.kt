@@ -1,4 +1,4 @@
-package com.ajit.swiggyui
+package com.mayur.swiggyui.swiggyui
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.ajit.swiggyui", appContext.packageName)
+        assertEquals("com.mayur.swiggyui.swiggyui", appContext.packageName)
     }
 }
